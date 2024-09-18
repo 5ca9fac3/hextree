@@ -26,8 +26,6 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    // printf("stat_data.st_uid = %d\n", stat_data.st_uid);
-
     if (stat_data.st_uid == 0)
     {
         fprintf(stderr, "File %s owned by root\n", argv[1]);
